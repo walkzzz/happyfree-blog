@@ -31,7 +31,7 @@ export default defineConfig({
     text: "最后更新时间",
     formatOptions: {
       dateStyle: "medium",
-      // timeStyle: "medium",
+      timeStyle: "full",
     },
   },
 });
