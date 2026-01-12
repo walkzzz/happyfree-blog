@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
+  head: [["link", { rel: "icon", href: "/favicon.png" }]], // 添加 favicon
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -20,18 +21,21 @@ export default defineConfig({
         ],
       },
     ],
-
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
-  },
-  srcDir: "./docs", // 设置文档目录
-  // lastUpdated: true, // 开启最后更新时间
-  lastUpdated: {
-    text: "最后更新时间",
-    formatOptions: {
-      dateStyle: "medium",
-      timeStyle: "full",
+    lastUpdated: {
+      text: "最后更新时间",
+      formatOptions: {
+        dateStyle: "medium", // 日期样式
+        timeStyle: "medium", // 时间样式
+      },
+    },
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: `Copyright © 2018-${new Date().getFullYear()}&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/#/Integrated/index" style="color: inherit; text-decoration: none;">备案信息</a>`,
     },
   },
+  srcDir: "./docs", // 设置文档目录
+  lastUpdated: true, // 开启最后更新时间
 });
