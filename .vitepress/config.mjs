@@ -33,7 +33,7 @@ export default defineConfig({
     },
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © 2018-${new Date().getFullYear()}&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/#/Integrated/index" style="color: inherit; text-decoration: none;">备案信息</a>`,
+      copyright: "Copyright © 2018-2024 京ICP备XXXXXXX号",
     },
   },
   srcDir: "./docs", // 设置文档目录
